@@ -1,6 +1,6 @@
 
 <?php
-
+ header('Content-type: text/plain');
 
 $ch = curl_init();
 $url = 'http://openapi.data.go.kr/openapi/service/rest/Covid19/getCovid19GenAgeCaseInfJson'; /*URL*/
