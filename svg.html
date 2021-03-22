@@ -6,14 +6,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>COVID-19</title>
+    <title>eunjeong</title>
     <link rel="stylesheet" href="./style.css" />
     <!-- svg.js -->
     <script src="https://cdn.jsdelivr.net/npm/@svgdotjs/svg.js@3.0/dist/svg.min.js"></script>
 </head>
 
-<body>
-    <h1>covid-19 test</h1>
+<body style="padding: 20px;">
+    <h1>랜덤 숫자별로 다른 물컵을 가져오기</h1>
+
+    <p>Random : <span id="random"></span></p>
+
+    <div id="cupArea"></div>
+
 
     <div class="container">
         <p>1단계</p>
@@ -41,12 +46,12 @@
     </div>
     <div class="container">
         <p>2단계</p>
-        <div id="three">
+        <div id="two">
             <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="200"
                 height="200">
                 <path d="M38,110 C 50 100, 65 80, 80 100 S 95 80, 110 100, 130 80, 133 100 L125, 150 45, 150z"
                     stroke="#47D3CE" fill="#47D3CE" stroke-width="3" stroke-linecap="round">
-                    <animate repeatCount="indefinite" fill="#47D3CE" attributeName="d" dur="2s" attributeType="XML"
+                    <animate repeatCount="indefinite" fill="#47D3CE" attributeName="d" dur="3s" attributeType="XML"
                         values="
                     M38,100 C 50 110, 65 100, 80 90 S 95 80, 110 80, 130 100, 133 100 L125, 150 45, 150z;
                     M33,80 C 50 100, 65 80, 80 80 S 95 110, 110 120, 130 80, 133 110 L125, 150 45, 150z;
@@ -64,20 +69,19 @@
     </div>
     <div class="container">
         <p>3단계</p>
-        <div id="four">
+        <div id="three">
             <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="200"
                 height="200">
-                <path d="M38,90 C 50 80, 65 50, 80 80 S 95 80, 110 50, 130 80, 142 50 L125, 150 45, 150z"
+                <path d="M38,90 C 60 80, 65 50, 80 80 S 95 80, 110 100, 130 80, 135 90 L125, 150 45, 150z"
                     stroke="#FCA4A2" fill="#FCA4A2" stroke-width="3" stroke-linecap="round">
-                    <animate repeatCount="indefinite" fill="#FCA4A2" attributeName="d" dur="3s" attributeType="XML"
+                    <animate repeatCount="indefinite" fill="#FCA4A2" attributeName="d" dur="2s" attributeType="XML"
                         values="
-                        M34,70 C 50 80, 65 50, 80 40 S 95 80, 110 100, 130 80, 142 50 L125, 150 45, 150z;
-                        M30,40 C 50 50, 65 50, 80 80 S 95 80, 110 60, 130 80, 138 70 L125, 150 45, 150z;
-                        M34,70 C 50 70, 65 40, 80 60 S 95 20, 110 70, 130 80, 138 80 L125, 150 45, 150z;
-                        M30,60 C 50 20, 65 30, 80 70 S 95 80, 110 60, 130 50, 145 30 L125, 150 45, 150z;
-                        M28,55 C 50 150, 65 40, 80 60 S 95 40, 110 20, 130 40, 138 80 L125, 150 45, 150z;
-                        M34,80 C 50 50, 65 100, 80 60 S 95 30, 110 60, 130 20, 143 40 L125, 150 45, 150z;
-                        M34,70 C 50 60, 65 50, 80 80 S 95 80, 110 50, 130 80, 142 50 L125, 150 45 150z;
+                        M35,100 C 60 70, 65 90, 80 80 S 95 65, 110 80, 130 80, 135 90 L125, 150 45, 150z;
+                        M33,65 C 60 60, 65 70, 80 65 S 95 75, 110 83, 130 60, 137 70 L125, 150 45, 150z;
+                        M35,85 C 60 90, 65 80, 80 90 S 95 60, 110 90, 130 70, 135 80 L125, 150 45, 150z;
+                        M35,80 C 60 70, 65 60, 80 70 S 95 70, 110 95, 130 90, 137 70 L125, 150 45, 150z;
+                        M35,90 C 60 70, 65 90, 80 80 S 95 65, 110 80, 130 80, 135 90 L125, 150 45, 150z;
+                        
                         
 
                     
@@ -89,7 +93,7 @@
     </div>
     <div class="container">
         <p>4단계</p>
-        <div id="five">
+        <div id="four">
             <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="200"
                 height="200">
                 <path d="M24,30 C 50 20, 65 10, 80 20 S 95 10, 110 20, 130 30, 147 10 L125, 150 45, 150z"
@@ -110,26 +114,29 @@
                 <path d="M155 10 C 160 5, 170 25, 165,30z" fill="#E78484">
                     <animate repeatCount="indefinite" fill="#E78484" attributeName="d" dur="2s" attributeType="XML"
                         values="
-                    M0,0;
-                    M0,0;
-                    M0,0;
+                        M0,0;
+                        M0,0;
+                        M0,0;
+                    M155 10 C 158 5, 160 20 160 17z;
+                    M155 10 C 160 5, 170 25, 165,25z;
                     M155 10 C 160 5, 170 25, 165,30z;
-                    M155 10 C 160 5, 170 25, 165,30z;
-                
                 " />
                 </path>
-
                 <path d="M155 5 C 163 0, 170 15, 165,10z" fill="#E78484">
                     <animate repeatCount="indefinite" fill="#E78484" attributeName="d" dur="2s" attributeType="XML"
                         values="
                     M0,0;
                     M0,0;
                     M0,0;
-                    M155 5 C 163 0, 170 15, 165,10z;
+                   
+                    M155 5 C 158 0, 160 7, 160,10z;
+                    M155 5 C 160 0, 163 10, 164,10z;
                     M155 5 C 163 0, 170 15, 165,10z;
                 
                 " />
                 </path>
+
+                <!-- <circle cx="160" cy="5" r="3" fill="#E78484"></circle> -->
 
                 <polygon points="20,5 45,150, 125,150 150,5" fill="none" stroke="#000" stroke-width="3" />
 
@@ -137,19 +144,19 @@
         </div>
     </div>
 
-    <!-- 
+    <!-- 원래 3단계
+    
+        M34,70 C 50 80, 65 50, 80 40 S 95 80, 110 100, 130 80, 142 50 L125, 150 45, 150z;
+                        M30,40 C 50 50, 65 50, 80 80 S 95 80, 110 60, 130 80, 138 70 L125, 150 45, 150z;
+                        M34,70 C 50 70, 65 40, 80 60 S 95 20, 110 70, 130 80, 138 80 L125, 150 45, 150z;
+                        M30,60 C 50 20, 65 30, 80 70 S 95 80, 110 60, 130 50, 145 30 L125, 150 45, 150z;
+                        M28,55 C 50 150, 65 40, 80 60 S 95 40, 110 20, 130 40, 138 80 L125, 150 45, 150z;
+                        M34,80 C 50 50, 65 100, 80 60 S 95 30, 110 60, 130 20, 143 40 L125, 150 45, 150z;
+                        M34,70 C 50 60, 65 50, 80 80 S 95 80, 110 50, 130 80, 142 50 L125, 150 45 150z;
+    
+    -->
 
-        M30,80 C 50 70, 65 40, 80 30 S 95 10, 110 50, 130 90, 142 50 L125, 150 45, 150z;
-        
-        
-        
-
-        
-        
-
-     -->
-
-
+    <script src="./svg.js"></script>
 
 </body>
 
