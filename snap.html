@@ -9,7 +9,9 @@
     <script src="./snap.svg-min.js"></script>
 
     <style>
-        svg{width:180px;}
+        svg {
+            width: 180px;
+        }
     </style>
 </head>
 
@@ -19,8 +21,26 @@
     <svg id="circleArea"></svg>
     <svg id="cloudArea"></svg>
     <svg id="lineArea1"></svg>
-    <svg id="lineArea2"></svg>
-    <svg id="lineArea3"></svg>
+    <svg id="cup" viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <defs>
+            <linearGradient id="myGradient" gradientTransform="rotate(90)">
+                <stop offset="0" stop-color="#FF0909" />
+                <stop offset="0.2" stop-color="#F3481A" />
+                <stop offset="0.5" stop-color="#FABA2C" />
+                <stop offset="1" stop-color="#00BCF2" />
+            </linearGradient>
+
+            
+            
+
+        </defs>
+
+        <!-- using my linear gradient -->
+        <circle cx="5" cy="5" r="4" fill="url('#myGradient')" />
+        
+    </svg>
+
+    <!-- <svg id="myLine"></svg> -->
 
     <script src="./snap.js"></script>
 </body>

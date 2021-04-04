@@ -34,3 +34,22 @@ line1.attr({
     strokeWidth:3,
     stroke:"#000"
 });
+
+// 컵
+let cup = Snap('#cup');
+
+/*
+// 직선 그리기 animation
+
+var s = Snap("#myLine");
+
+//Line parameters (x1, y1, x2, y2)
+var line = s.line(30, 45, 30, 45);
+line.attr({
+    stroke: "#000",
+    strokeWidth: 2
+});
+
+//Old x2 values is 30 and now it is increasing to 70 with 1 second duration
+line.animate({x2: 70}, 1000);
+*/
