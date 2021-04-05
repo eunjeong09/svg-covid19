@@ -37,19 +37,15 @@ line1.attr({
 
 // 컵
 let cup = Snap('#cup');
+cup.polygon(20,5,150,5,125,150,45,150).attr({ fill: "none", stroke: "#000", strokeWidth:"3" });
 
-/*
-// 직선 그리기 animation
 
-var s = Snap("#myLine");
+cup.hover(function(){
+    wave();
+})
 
-//Line parameters (x1, y1, x2, y2)
-var line = s.line(30, 45, 30, 45);
-line.attr({
-    stroke: "#000",
-    strokeWidth: 2
-});
-
-//Old x2 values is 30 and now it is increasing to 70 with 1 second duration
-line.animate({x2: 70}, 1000);
-*/
+// function wave() {
+//     cup.animate({
+//       transform: 't100,0'
+//     },2000)
+//   };
