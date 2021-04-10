@@ -37,12 +37,24 @@ line1.attr({
 
 // 컵
 let cup = Snap('#cup');
+
+// 컵 안에 물 그리기
+// let cupWater = cup.path(d="M26,40 C 50 20, 65 10, 80 20 S 95 30, 110 20, 130 13, 147 25 L125, 150 45, 150z")
+
+// cupWater.attr({
+//     stroke:"#E78484",
+//     fill:"#E78484",
+//     strokeWidth:3,
+//     strokeLinecap:"round"
+// });
+
+// water animation
+
 cup.polygon(20,5,150,5,125,150,45,150).attr({ fill: "none", stroke: "#000", strokeWidth:"3" });
 
-
-cup.hover(function(){
-    wave();
-})
+// cup.hover(function(){
+//     wave();
+// })
 
 // function wave() {
 //     cup.animate({
