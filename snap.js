@@ -51,36 +51,8 @@ cupWater.attr({
 // water animation
 cupWater.animate({
     d: "M24,20 C 50 40, 65 30, 80 13 S 95 25, 110 15, 130 40, 147 15 L125, 150 45, 150z;",
-    // d:"M26,40 C 50 20, 65 10, 80 20 S 95 30, 110 20, 130 13, 147 25 L125, 150 45, 150z;"
-    // d:"M26,40 C 50 20, 65 10, 80 20 S 95 30, 110 20, 130 13, 147 25 L125, 150 45, 150z;"
 }, 1000, mina.linear)
-
-
-//snap로 path 그려내기..?
-// var s = Snap(cup.querySelector('svg')),
-var s = Snap(cup),
-    path = s.select('path'),
-    origPath = path.attr('d'),
-    route = cup.getAttribute('data-path-route'),
-    callback = function () {
-        path.animate({ 'path': origPath }, speed, mina.easeout);
-    };
-
-el.addEventListener('click', function () {
-    path.animate({ 'path': route }, speed, mina.easein, callback);
-});
-
 
 cup.polygon(20, 5, 150, 5, 125, 150, 45, 150).attr({ fill: "none", stroke: "#000", strokeWidth: "3" });
 
 
-
-// cup.hover(function(){
-//     wave();
-// })
-
-// function wave() {
-//     cup.animate({
-//       transform: 't100,0'
-//     },2000)
-//   };
