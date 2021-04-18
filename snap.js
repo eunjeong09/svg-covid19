@@ -54,12 +54,3 @@ cupWater.animate({
 }, 1000, mina.linear)
 
 cup.polygon(20, 5, 150, 5, 125, 150, 45, 150).attr({ fill: "none", stroke: "#000", strokeWidth: "3" });
-
-
-var s = Snap('#test');
-var l = s.select('#Line');
-
-Snap.animate(0,20, function( value ) {
-    l.attr({ 'stroke-dasharray': '1,' + value});
-}, 2000);
-
