@@ -54,3 +54,18 @@ cupWater.animate({
 }, 1000, mina.linear)
 
 cup.polygon(20, 5, 150, 5, 125, 150, 45, 150).attr({ fill: "none", stroke: "#000", strokeWidth: "3" });
+
+
+
+let s = Snap('#circleTest');
+console.log(s);
+
+var circle_1 = s.circle(200, 200, 140);
+var circle_2 = s.circle(150, 200, 140);
+ 
+var circles = s.group(circle_1, circle_2);
+ 
+circles.attr({
+  fill: 'coral',
+  fillOpacity: .6
+});
